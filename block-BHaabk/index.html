@@ -1,0 +1,87 @@
+<!-- 
+1. Create a simple page having a header, main content, and a footer.
+
+2. Inside the header keep the brand name to the left and all the navigation to the right.
+
+4. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image.
+
+5. After the article section, take a gallery section, in which there will be two rows and in both the row there will be three columns. Each column must have a different image.
+
+6. After the gallery section footer will come.
+
+7. Use flexbox properties and values to create columns.
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <link rel="stylesheet" href="assets/stylesheet/style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/f1a9dfe756.js" crossorigin="anonymous"></script>
+     <title>Flexbox 1</title>
+ </head>
+ <body> 
+     <header>
+         <div class="container">
+                <a class="box brand" href="#">
+                    <img class="box brand-img"src="assets/media/logo.png" alt="Brand Logo">
+                </a>
+                <nav class="box nav">
+                    <a class="box nav a" href="#">Home</a>
+                    <a class="box nav a" href="#">Blog</a>
+                    <a class="box nav a" href="#">About</a>
+                </nav>
+         </div>
+     </header>
+     <main>
+         <section>
+            <div class="container">
+                <div class="box blog">
+                    <h2 class="box-blog">This is an Article</h2>
+                    <p class="box-blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos asperiores error sit culpa odio consequatur, a corrupti, fugit praesentium aliquid cupiditate molestiae nam? Amet, commodi delectus repellendus illum molestiae animi?</p>
+                    <p class="box-blog p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos asperiores error sit culpa odio consequatur, a corrupti, fugit praesentium aliquid cupiditate molestiae nam? Amet, commodi delectus repellendus illum molestiae animi?</p>
+                </div>
+                <div class="container">
+                    <div class="box blog">
+                        <img class="box blog-img" src="assets/media/newsletter.svg" alt="Newsletter">
+                    </div>
+                </div>
+            </div>
+         </section>
+         <section class="container">
+             <div class=" box gallery">
+                <div class="box img1">
+                    <img class="box" src="assets/media/aroundtheworld.svg" alt="Around the world">
+                </div>
+                <div class="box img1">
+                    <img class="box" src="assets/media/booking.svg" alt="Booking">
+                </div>
+                <div class="box img1">
+                    <img class="box" src="assets/media/camera.svg" alt="Camera">
+                </div>
+                <div class="box img1">
+                    <img class="box" src="assets/media/devices.svg" alt="Devices">
+                </div>
+                <div class="box img1">
+                    <img class="box" src="assets/media/questions.svg" alt="Questions">
+                </div>
+                <div class="box img1">
+                    <img class="box" src="assets/media/terms.svg" alt="Terms">
+                </div>
+            </div>
+         </section>
+     </main>
+     <footer class="footer">
+         <section class="container footer-box">
+             <div class="box small">
+                 <small>&copy Altcampus 2020</small>
+             </div>
+             <div class="box footer-nav">
+                 <a class="box footer-a" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                 <a class="box footer-a" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+             </div>
+         </section>
+     </footer>
+ </body>
+ </html>
