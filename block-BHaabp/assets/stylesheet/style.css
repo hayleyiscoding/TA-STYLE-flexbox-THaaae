@@ -1,0 +1,320 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Custom Styles */
+
+*,
+* ::before,
+* ::after {
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: #FAFAFA;
+    font-weight: 300;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Clearfix */
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+
+/* Color Codes */
+/* #5EBD8B - Green */
+/* #594A78 - Dark Purple */
+/* #773C76 - Pink Purple */
+/* rgb(177,160,187) - Hero subtitle */
+/* #666666 - Other subheadings */
+/* #5EBD8B - Social icons - Green */
+
+/* Header  */
+.header {
+    padding: 30px;
+    height: 600px;
+    background-color: purple; /* For browsers that do not support gradients */
+    background: linear-gradient(to right,#594A78,#773C76);
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo {
+    width: 100%;
+    justify-content: space-between;
+}
+.brand {
+    flex: 0 1 50%;
+    justify-content: flex-start;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.nav a {
+    text-decoration: none;
+    margin-left: 32px;
+    text-transform: uppercase;
+    color: #5EBD8B;
+    font-weight: 600;
+}
+
+/* Hero */
+.hero {
+    justify-content: space-around;
+    padding-bottom: 80px;
+}
+.heading {
+    flex: 0 1 50%;
+    padding-left: 40px;
+    padding-right: 30px;
+}
+.subtitle {
+    display: flex;
+    flex: 0 1 50%;
+    flex-direction: column;
+    border-left: 1px solid rgb(177,160,187);
+    padding: 0 60px;
+}
+h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+}
+h2 {
+    color: rgb(177,160,187);
+    font-size: 18px;
+    margin: 30px 0;
+}
+button {
+    background-color: #5EBD8B;
+    border-radius: 50px;
+    display: inline-flex;
+    align-self: flex-start;
+    border: none;
+}
+button a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 40px;
+}
+
+/* Section 1 */
+.main {
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px solid lightgrey;
+}
+.section-1 {
+    padding: 40px;
+    padding-bottom: 60px;
+    background-color: white;
+}
+
+
+/* Article 1 */
+.article-1 {
+    flex-direction: column;
+    flex: 0 1 50%;
+    padding-right: 50px;
+    padding-left: 10px;
+}
+h3 {
+    align-self: flex-start;
+    font-size: 30px;
+    font-weight: 500;
+    color: #666666;
+    padding-bottom: 20px;
+}
+p {
+    padding-bottom: 30px;
+}
+article button {
+    background-color: white;
+}
+article button a {
+    color: black;
+    border: 1px solid grey;
+    border-radius: 50px;
+    font-weight: 500;
+}
+
+/* Article 2 */
+.article-2 {
+    flex-direction: column;
+    flex: 0 1 50%;
+    border-left: 1px solid rgb(173, 173, 173);
+}
+.fas, .fa-check {
+    color: green;
+    margin-right: 15px;
+}
+.list {
+    padding: 10px;
+    padding-left: 30px;
+}
+
+/* Section 2 */
+.section-2 {
+    flex-wrap: wrap;
+    padding: 10px 50px;
+    background-color: #FAFAFA;
+}
+
+/* Article 3 */
+.article-3 {
+    background-color: white;
+    margin: 34px 0;
+    border-bottom: 1px solid lightgrey;
+}
+.box {
+    flex-direction: column;
+    flex: 0 1 70%;
+    padding: 0 40px;
+}
+img {
+    width: 100%;
+}   
+,image {
+    flex: 0 1 30%;
+}
+
+/* Article 4 */
+.article-4 button {
+    padding: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #FAFAFA;
+}
+.footer {
+    background-color: white;
+    padding: 50px 100px;
+    margin-top: 2%;
+}
+.footer-section {
+    display: flex;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 50%;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding: 0 50px;
+    border-left: 1px solid rgb(173, 173, 173);
+}
+.form {
+    flex-direction: column;
+    flex: 0 1 50%;
+    padding-right: 50px;
+    align-items: flex-start;
+}
+input[type=text], textarea {
+    display: inline-flex;
+    width: 240px; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=text] {
+    flex: 0 1 50%;
+    margin-right: 10px;
+}
+textarea {
+    width: 490px;
+}
+input[type=submit] {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 50px;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.fab, .fas {
+    color: #5EBD8B;
+    margin-right: 16px;
+}
+.facebook {
+    padding-left: 6px;
+}
+.instagram, .email {
+    padding-left: 4px;
+}
+.address-line-1 {
+    padding-left: 0px;
+}
+.links a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+.address {
+    margin-left: 39px;
+}
+
+/* Copyright */
+.copyright {
+    background-color: #FAFAFA;
+    padding: 40px;
+    font-size: 12px;
+}
