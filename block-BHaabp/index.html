@@ -6,3 +6,177 @@
 - Using CSS resets is necessary.
 - Use semantic tags and keep the nesting and indentation proper. 
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f1a9dfe756.js" crossorigin="anonymous"></script>
+    <title>Flexbox Assignment 3</title>
+</head>
+<body> 
+    <!-- Header -->
+    <header class="header flex">
+        <div class="container flex logo">
+            <a class="brand" href="#">Prism</a>
+            <nav class="nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Generic</a>
+                <a href="#">Elements</a>
+            </nav>
+        </div>
+        <!-- Hero -->
+        <div class="container flex hero">
+            <div class="flex heading">
+                <h1>Welcome to Prism, a free responsive site template by TEMPLATED</h1>
+            </div>
+            <div class="flex subtitle">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi placeat molestiae culpa unde, voluptatem vel quisquam quo beatae voluptatibus sequi sunt, nisi dolorum ratione vero nobis laboriosam asperiores laborum consectetur.</h2>
+                <button>
+                    <a href="#">Get Started</a>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- Section 1 -->
+        <div class="main">
+            <section class="container section-1 flex">
+                <!-- Article 1 -->
+                <article class="article-1 flex">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi placeat molestiae culpa unde, voluptatem vel quisquam quo beatae voluptatibus sequi sunt, nisi dolorum ratione vero nobis laboriosam asperiores laborum consectetur.</p>
+                    <button>
+                        <a href="#">Learn More</a>
+                    </button>
+                </article>
+                <!-- Article 2 -->
+                <article class="article-2 flex">
+                    <div class="list">
+                        <i class="fas fa-check"></i>
+                        <span>Lorem ipsum dolor sit, amet Lorem, ipsum dolor sit amet.</span>
+                    </div>
+                    <div class="list">
+                        <i class="fas fa-check"></i>
+                        <span>Lorem ipsum dolor sit, amet Lorem, ipsum dolor sit amet.</span>
+                    </div>
+                    <div class="list">
+                        <i class="fas fa-check"></i>
+                        <span>Lorem ipsum dolor sit, amet Lorem, ipsum dolor sit amet.</span>
+                    </div>
+                    <div class="list">
+                        <i class="fas fa-check"></i>
+                        <span>Lorem ipsum dolor sit, amet Lorem, ipsum dolor sit amet.</span>
+                    </div>
+                    <div class="list">
+                        <i class="fas fa-check"></i>
+                        <span>Lorem ipsum dolor sit, amet Lorem, ipsum dolor sit amet.</span>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <!-- Section 2 -->
+        <section class="container section-2 flex">
+           <!-- Article 3 -->
+            <article class="container article-3 flex">
+                <div class="container flex image">
+                    <img src="assets/media/pic01.jpg" alt="Buildings in a city">
+                </div>   
+                <div class="container flex box">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi placeat molestiae culpa unde, voluptatem vel quisquam quo beatae voluptatibus sequi sunt, nisi dolorum ratione vero nobis laboriosam asperiores laborum consectetur.</p>
+                    <button>
+                        <a href="#">Details</a>
+                    </button>
+                </div>
+            </article>
+            <article class="container article-3 flex">
+                <div class="container flex image">
+                    <img src="assets/media/pic02.jpg" alt="Person above clouds">
+                </div>   
+                <div class="container flex box">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi placeat molestiae culpa unde, voluptatem vel quisquam quo beatae voluptatibus sequi sunt, nisi dolorum ratione vero nobis laboriosam asperiores laborum consectetur.</p>
+                    <button>
+                        <a href="#">Details</a>
+                    </button>
+                </div>
+            </article>
+            <article class="container article-3 flex">
+                <div class="container flex image">
+                    <img src="assets/media/pic03.jpg" alt="Laptop and Ipad">
+                </div>   
+                <div class="container flex box">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi placeat molestiae culpa unde, voluptatem vel quisquam quo beatae voluptatibus sequi sunt, nisi dolorum ratione vero nobis laboriosam asperiores laborum consectetur.</p>
+                    <button>
+                        <a href="#">Details</a>
+                    </button>
+                </div>
+            </article>
+            <!-- Article 4 -->
+            <article class="container article-4 flex">
+                <button class>
+                    <a href="#">Lorem ipsum dolor</a>
+                </button>
+            </article>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="container footer-section">
+                <div class="flex form">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi placeat molestiae culpa unde</p>
+                    <div class="flex">
+                        <form action="form">
+                            <div class="flex">
+                                <input type="text" id="fname" name="firstname" placeholder="Name">
+                                <span><input type="text" id="email" name="email" placeholder="Email"></span>
+                            </div>
+                            <textarea id="message" name="message" placeholder="Message" style="height:150px"></textarea>
+                            <input type="submit" value="Send Message">
+                        </form>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="#" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                        <span>twitter.com/untitled</span>
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                        <span class="facebook">facebook.com/untitled</span>
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <span class="instagram">instagram.com/untitled</span>
+                    </a>
+                    <a href="mailto:information@untitled.tld">
+                        <i class="fas fa-envelope"></i>
+                        <span class="email">information@untitled.tld</span>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-home"></i>
+                        <span class="address-line-1">1234 Somewhere Road Suite 9823</span>
+                        <p class="address">Nashville, TN, 00000-0000</p> 
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright flex">
+            <div class="container">
+                <small>&copy Untitled. All Rights Reserved. Images: Unsplash. Design: TEMPLATED</small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
